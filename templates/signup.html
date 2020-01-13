@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RANN-KIET|Signup</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/signup.css')}}">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+ 
+<style type="text/css">
+  body {background:url("{{url_for('static',filename='images/homepage-blurred.jpg')}}")}
+</style>
+
+<script type="text/javascript">
+    function aadharCheck()
+   {
+          const request = new XMLHttpRequest();
+          const key = document.querySelector('#aadhar_no').value;
+
+          request.open('POST', '/check-email');
+            request.onload = () => {
+                 const data = JSON.parse(request.responseText);
+                      /*document.getElementById("team_name").value=data[0]*/
+                     if (data[0]=="No") {
+                      document.getElementById("aadhar_no").style.color = "green";
+                      document.getElementById("reg_btn").type="submit";
+                     }
+                     else{
+                      document.getElementById("aadhar_no").style.color = "red";
+                      document.getElementById("reg_btn").type="button";
+                     }
+            }
+        const data = new FormData();
+        data.append('aadhar_no', key);
+        request.send(data);
+        return false;
+  };
+</script>
+
+
+
+</head>
+<body class="homepage">
+
+<div class="wrap_box">
+<div class="signup_txt">Sign Up</div>
+
+<form action="/signup" method="POST">
+  <input type="text" name="name" placeholder=" Full Name" required> 
+  <input type="text" name="father_name" placeholder="Father's Name" required> <br><br> 
+  <input type="email" name="uname" id="aadhar_no" oninput="aadharCheck()" placeholder="Email"  required> 
+  <input type="password" name="passwd" placeholder="Password" required> <br><br>
+  <input type="text" name="institute" placeholder="Institute Name" required> 
+  <input type="text" name="roll_no" placeholder="Roll Number" required> <br><br>
+  <input type="text" name="branch" placeholder="Branch" required> 
+  <!-- <input type="select" > --> 
+  <select name="year" placeholder="Year" style="margin-left: 75px;" required>
+    <option selected disabled>Year</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select><br><br>
+  <input type="text" name="aadhar_no"  placeholder="Aadhaar Number" maxlength="12" size="12" required>
+  <input type="number" name="contact_no" placeholder="Contact Number" required> <br><br>
+  <div style="margin-top:1%;font-size:1.3em;">
+  <input type="radio" name="gender" value="M" checked>&nbsp; Male
+  <input type="radio" name="gender" value="F">&nbsp; Female
+ </div>
+  <button class="signup_btn" id="reg_btn">Sign Up</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

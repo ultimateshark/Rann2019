@@ -1,0 +1,208 @@
+@media only screen and (max-width:1142px){
+	.sp_guest_box{
+  		margin-top:-190px;
+	}
+
+	.abt_kiet{
+		margin-top:-190px;
+	}
+
+}
+
+@media only screen and (max-width:1073px){
+	.abt_kiet_cont{
+		margin-top:10px;
+	}
+}
+
+@media only screen and (max-width: 926px){
+	
+
+	.p1,.f1{
+		width: 52%;
+	}
+}
+
+@media only screen and (max-width:910px){
+	.sp_guest_box{
+  		margin-top:-290px;
+	}
+
+	.abt_kiet{
+		margin-top:-290px;
+	}
+
+	.abt_kiet_cont{
+		font-size:1.5em;
+	}
+}
+
+@media only screen and (max-width: 801px){
+	.sp_guest_box{
+  		margin-top:-100px;
+	}
+
+	.abt_kiet{
+		margin-top:-100px;
+	}
+
+
+	.p1,.f1{
+		height:300px;
+	}
+
+
+}
+
+@media only screen and (max-width: 625px){
+	
+
+	.flex{
+		display: none;
+	}
+
+	.fun_events_txt{
+		font-size:1.8em;
+		width:190px;
+		height:35px;
+		margin-top:0px;
+	}
+
+	.pubg{
+		display: block;
+		margin-left:28px;
+		width:100%;
+	}
+
+	.fifa{
+		display: block;
+		width:100%;
+		position:absolute;
+		top:400px;
+		left:30px;
+	}
+
+}
+
+@media only screen and (max-width:601px){
+	.sp_guest_box{
+  		margin-top:-200px;
+	}
+
+	.abt_kiet{
+		margin-top:-200px;
+	}
+
+}
+
+@media only screen and (max-width:589px){
+	.abt_kiet_cont{
+		font-size:1.3em;
+	}
+}
+
+@media only screen and (max-width: 537px){
+	.sp_guest_box{
+		margin-top:-280px;
+	}
+
+	.abt_kiet{
+		margin-top:-280px;
+	}
+}
+
+
+@media only screen and (max-width:511px){
+	.pubg,.fifa{
+		height:300px;
+	}
+
+	.fifa{
+		top:300px;
+	}
+
+}
+
+@media only screen and (max-width: 476px){
+	.pubg{
+		margin-left:44px;
+	}
+
+	.fifa{
+		position: absolute;
+		left:40px;
+	}
+}
+
+@media only screen and (max-width:443px){
+	.sp_guest_box{
+  		margin-top:8px;
+	}
+
+	.sp_guest_txt{
+		margin-left:-50px;
+	}
+
+	.abt_kiet_cont{
+		font-size:1.2em;
+		width:90%;
+		margin-left:15px;
+	}
+
+	.abt_kiet{
+		margin-top:8px;
+	}
+}
+
+@media only screen and (max-width:408px){
+	.pubg{
+		margin-left:48px;
+	}
+
+	.fifa{
+		position: absolute;
+		left:50px;
+	}
+}
+
+@media only screen and (max-width:400px){
+	.sp_guest_box{
+		margin-top:60px;
+  		
+	}	
+
+	.abt_kiet{
+		margin-top:60px;
+	}
+}
+
+
+@media only screen and (max-width: 374px){
+	.pubg,.fifa{
+		height: 250px;
+		top:250px;
+	}
+
+	.pubg{
+		margin-left:55px;
+	}
+}
+
+@media only screen and (max-width: 381px){
+	.abt_kiet{
+		margin-top:-90px;
+	}
+}
+
+@media only screen and (max-width: 368px){
+	.sp_guest_box{
+  		
+	}	
+}
+
+@media only screen and (max-width: 357px){
+	.abt_kiet_cont{
+		font-size:1.1em;
+	}	
+}
+

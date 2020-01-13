@@ -1,0 +1,136 @@
+body{
+    background-color:#222831;
+    color:#fff;
+    font-family: 'Nunito',sans-serif;
+    overflow:hidden;
+}
+
+input,select{
+	font-size:1.1em;
+    width:320px;
+	height:40px;
+	border-bottom:3px solid  #fff;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+	background-color:transparent;
+    color:#fff;
+    font-family: 'Nunito',sans-serif;
+    font-size:1.3em;
+}
+
+
+input,select:focus{
+    outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ,color 5000s;
+
+}
+
+.login_txt{
+    font-family:'Nunito',sans-serif;
+    font-size:2.5em;
+    color:#fff;
+    position:absolute;
+    top:10%;
+    left:40%;
+}
+
+.dont_have_acc{
+    color:#fff;
+    position:absolute;
+    top:120%;
+    font-size:1.3em;
+    left:27%;
+    
+}
+
+.signup_link{
+    color:#fff;
+}
+
+
+
+/*.float_label{
+    position:absolute;
+    width:110px;
+    font-size:1.3em;
+    left:0;
+    top:10px;
+}
+
+
+
+
+input:focus ~ .float_label,
+input:not(:focus):valid ~ .float_label{
+  top: -12px;
+  bottom: 10px;
+  left: 10px;
+  font-size:1.1em;
+  opacity: 1;
+}
+
+
+
+.float_label {
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 10px;
+  transition: 0.2s ease all;
+}
+*/
+
+
+.wrapper_box{
+    background:rgba(0,0,0,0.6);
+    height:55%;
+    width:550px;
+    position: absolute;
+    left:28%;
+    top:20%;
+}
+
+form{
+    position:absolute;
+    left:25%;
+    top:40%;
+
+}
+
+.login_btn{
+    font-size:1.3em;
+    width:320px;
+    position:relative;
+    top:20px;
+    height:40px;
+    font-family: 'Nunito',sans-serif;
+    background-color:transparent;
+    border:2px solid #fff;
+    color:#fff;
+}
+
+.login_btn:hover{
+    cursor:pointer;
+    background-color: #fff;
+    color:#222831;
+    transition: 0.2s;
+}
+
+
+@media only screen and (max-width:800px){
+  .wrapper_box{
+    transform: translate(-100px,0);
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .wrapper_box{
+    transform: translate(-220px,0);
+  }
+}

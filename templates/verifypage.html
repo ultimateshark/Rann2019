@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verification|Rann-KIET</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  
+
+<style>
+
+body{
+    background-color:#222831;
+    color:#fff;
+    font-family: 'Nunito',sans-serif;
+}
+
+input,select{
+	font-size:1.1em;
+    width:320px;
+	height:40px;
+	border-bottom:3px solid  #fff;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+	background-color:transparent;
+    color:#fff;
+    font-family: 'Nunito',sans-serif;
+    font-size:1.3em;
+}
+
+
+input,select:focus{
+    outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s  ;
+}
+
+
+.verify_txt{
+/*margin-left:32%;
+margin-top:15%;*/
+	font-size:1.8em;
+}
+
+
+
+.verify_btn{
+	/*margin-top:8%;
+	margin-left:8%;*/
+	font-size:1.3em;
+    width:320px;
+    height:40px;
+    font-family: 'Nunito',sans-serif;
+    background-color:transparent;
+    border:2px solid #fff;
+    color:#fff;
+
+}
+
+
+
+.verify_btn:hover{
+    cursor:pointer;
+    background-color: rgba(255,255,255,0.6);
+    color:#000;
+    transition: 0.2s;
+}
+
+.wrapper{
+	margin-left:32%;
+	margin-top:15%;
+}
+form{
+	margin-top:11%;
+	margin-left:9%;
+}
+
+@media screen and (max-width:830px){
+
+.wrapper{
+	transform: translate(-30%,40%);
+}
+
+@media screen and (max-width:445px){
+.wrapper{
+	transform: translate(-40%,25%);
+}
+}
+
+</style>
+</head>
+<body>
+	<div class="wrapper">
+	<div class="verify_txt">Enter Verification Code Sent to Your Email</div>
+<form action="/verify-otp/{{email}}" method="POST">
+ <!--   <input type="text" name="email" value="">  -->
+  <input type="text" name="otp"> <br><br><br>
+  <button class="verify_btn">Verify</button>
+</form>
+</div>
+</body>
+</html>

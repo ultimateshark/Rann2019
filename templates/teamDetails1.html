@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RANN-KIET|TEAM DEATILS</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<div>
+	<h2>Captain Details</h2>
+	<h3>{{captain.name}}</h3>
+	<h3>{{captain.college}}</h3>
+	<h3>{{captain.father_name}}</h3>
+	<h3>{{captain.mob_no}}</h3>
+
+</div>
+
+<div>Team Details</div>
+
+
+
+<form action="/user/register-teaminfo-{{eventtype}}-{{eventname}}" method="POST">
+<input type="text" name="team_name" placeholder=" TEAM Name"> <br>
+	{% for i in range(1,members+1) %}
+	
+<div>
+	<h3>Member {{i}}</h3>
+  <input type="text" name="name{{i}}" placeholder=" Full Name"> 
+  <input type="text" name="father_name{{i}}" placeholder="Father's Name"> <br><br> 
+  <input type="email" name="uname{{i}}" placeholder="Email" > 
+  <input type="text" name="institute{{i}}" placeholder="Institute Name"> 
+  <input type="text" name="roll_no{{i}}" placeholder="Roll Number"> <br><br>
+  <input type="text" name="branch{{i}}" placeholder="Branch"> 
+  <input type="number" name="year{{i}}" placeholder="Year"> <br><br>
+  <input type="text" name="aadhar_no{{i}}" placeholder="Aadhaar Number">
+  <input type="number" name="contact_no{{i}}" placeholder="Contact Number"> <br><br>
+  <div style="margin-top:1%;font-size:1.3em;">
+  {% if eventtype=="MixedDouble"  %}
+  <input type="radio" name="gender{{i}}" value="M" >&nbsp; Male
+  <input type="radio" name="gender{{i}}" value="F">&nbsp; Female
+  {% elif eventtype == "Team" or eventtype=="Double"  %}
+  	{% if captain.gender=="M" %}
+  	<input type="radio" name="gender{{i}}" value="M" >&nbsp; Male
+  	{% elif captain.gender=="F" %}
+  	<input type="radio" name="gender{{i}}" value="F">&nbsp; Female
+  	{% endif %}
+  {% endif %}
+ </div>
+
+</div>
+
+{% endfor %}
+
+  <button type="submit">SUBMIT</button>
+
+</form>
+</body>
+</html>

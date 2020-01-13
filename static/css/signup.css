@@ -1,0 +1,118 @@
+body{
+    background-color:#222831;
+    color:#fff;
+    font-family: 'Nunito',sans-serif;
+    overflow-x:hidden;
+}
+
+input,select{
+	font-size:1.1em;
+    width:320px;
+	height:40px;
+	border-bottom:3px solid  #000;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+	background-color:transparent;
+    color:#000;
+    font-family: 'Nunito',sans-serif;
+    font-size:1.3em;
+}
+
+
+input,select:focus{
+    outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+ transition: background-color 5000s ,color 5000s;
+}
+
+input[type=radio]{
+    width:20px;
+    height:20px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.signup_txt{
+    font-family:'Nunito',sans-serif;
+    font-size:2.5em;
+    color:#000;
+    position:absolute;
+    top:5%;
+    left:40%;
+}
+
+
+.wrap_box{
+    background:rgba(255,255,255,0.6);
+    height:550px;
+    width:60%;
+    position: absolute;
+    left:20%;
+    top:13%;
+}
+
+form input{
+    margin-left:8%;
+
+}
+
+form{
+    margin-top:10%;
+}
+
+
+.signup_btn{
+    margin-top:2%;
+    margin-left:20%;
+    font-size:1.3em;
+    width:320px;
+    height:40px;
+    font-family: 'Nunito',sans-serif;
+    background-color:transparent;
+    border:2px solid #000;
+    color:#000;
+}
+
+.signup_btn:hover{
+    cursor:pointer;
+    background-color: rgba(0,0,0,0.6);
+    color:#fff;
+    transition: 0.2s;
+}
+
+input::placeholder{
+    color:#000;
+}
+
+@media only screen and (max-width:1303px){
+    .wrap_box{
+        position: absolute;
+        left:180px;
+        width:890px;
+    }
+}
+
+@media only screen and (max-width:725px){
+    .wrap_box *{
+        transform: scale(0.9) ;
+    }
+
+    .wrap_box{
+        transform: translate(-360px,0px);
+    }
+}
+
+@media only screen and (max-width:450px){
+    .wrap_box{
+        margin-left:90px;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+	body{
+    background-color:#222831;
+    color:#fff;
+    overflow-x:hidden;
+    font-family: 'Nunito',sans-serif;
+}
+
+
+
+button{
+	width:200px;
+	height:40px;
+	margin-left:10%;
+	background-color:transparent;
+	border:2px solid #fff;
+	border-radius: 20px;
+	margin-top:3%;
+}
+
+a{
+	color:#fff;
+	text-decoration:none;
+	font-size:1.4em;
+}
+
+button:hover{
+	background-color:#fff;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+}
+
+button:hover > a{
+	color:#000;
+	text-decoration: none;
+}
+
+</style>
+
+  <title>Rann-KIET|Select Event Type</title>
+
+<style>
+nav{
+    background-color:#cd4545;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%; 
+    height:55px;
+    color:#fff;
+}
+
+.com_txt{
+    margin-left:45%;
+    font-size:2em;
+    position: absolute;
+    top:8px;    
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo{
+    font-size:2em;
+    margin-left:2%;
+    font-family: 'Rock Salt',cursive;
+    margin-top:-10px;
+}
+
+a{
+    color:#fff;
+    text-decoration: none;
+}
+a:hover{
+    opacity:0.7;
+}
+
+</style>
+
+
+</head>
+<body>
+  
+
+ <nav>
+<div class="logo"><a href="/" style="">Rann</a></div>
+
+<div class="com_txt">Type Selection</div>
+
+</nav>
+
+
+
+
+<div class="container-fluid" style="position:absolute;top:40%;margin-left:26%;">
+      
+  <div class="row">
+  	{% if types.split("-")|length == 2 %}
+  	{% set col="col-sm-6" %}
+  	{% else %}
+  	{% set col="col-sm-4" %}
+  	{% endif %}
+  {% for i in types.split("-") %}
+
+    <div class={{col}} > 
+      <button><a href="register-teamDetails-{{i}}-{{eventname}}">{{i}}</a></button>
+    </div>
+    
+{% endfor %}
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+/*.dir_ad_msg{
+  
+  position: relative;
+  top:1150px;
+  left:5%;
+}
+
+.dir_ad_msg_cont{
+	background-color: rgba(255,255,255,0.7);
+	padding-right:100px;
+	
+}
+
+
+.dir_ad_msg_cont{
+	width:86%;
+	height:300px;
+}
+
+.dir_ad_pic{
+	
+	width:250px;
+	height:250px;
+	
+}
+
+.dir_ad_msg_txt{
+	position: relative;
+	left: 280px;
+	top:-240px;
+	padding-right: 250px;
+}
+
+.dir_ad_msg_txt span{
+	font-size: 2em;
+
+}
+
+.dir_ad_msg_words{
+	text-align:justify;
+	font-size:1.3em;
+}	
+
+@media only screen and (max-width:975px){
+	.dir_ad_msg_cont{
+		
+	}
+}
+
+
+@media only screen and (max-width:801px){
+	.dir_ad_msg{
+		position: relative;
+		top:850px;
+	}
+
+	.dir_ad_pic{
+		display: none;
+	}
+
+	.dir_ad_msg_cont{
+		background-color:rgba(0,0,0,0);
+	}
+
+	.dir_ad_msg_txt{
+		width:100%;
+		position: relative;
+		top:10px;
+		left:-20px;
+		background-color:blue;
+
+	}
+}
+
+
+@media only screen and (max-width:676px){
+	.dir_ad_msg{
+		position: relative;
+		top:900px;
+	}
+}
+
+@media only screen and (max-width:500px){
+	.dir_ad_msg{
+		position: relative;
+	}
+}*/

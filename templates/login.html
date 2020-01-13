@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RANN-KIET|Login</title>
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">
+  	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+ <meta name="viewport" content="wdith=device-width,initial-scale=1.0">
+<style>
+  body {background:url("{{url_for('static',filename='images/homepage-blurred.jpg')}}")}
+  *{font-family:'Nunito',sans-serif;}
+</style>
+  <!-- 
+<link href="{{url_for('static',filename='css/brusher-demo.min.css')}}" rel="stylesheet">
+ -->
+
+</head>
+<body>
+
+<div class="wrapper_box">
+	
+	<div class="login_txt">Login</div>
+	<div class="dont_have_acc">Don't have an Account? &nbsp; <a href="/signuppage" class="signup_link">Sign Up </a></div>
+<form action="/login/{{redir}}" method="POST">
+
+
+
+<!-- <div>	
+  <input type="email" class="inputText" name="uname" required/> 
+  <span class="float_label">Enter Email</span>
+</div>
+ -->
+
+
+	<input type="email" class="inputText" name="uname" placeholder="Enter Your Email" required> 
+  <br><br>
+  <input type="password" name="passwd" placeholder="Enter Your Password" required> 
+
+  <br><br>
+  <button class="login_btn">Login</button>
+</form>
+
+</div>
+
+<script  src="{{url_for('static',filename='js/brusher-demo.min.js')}}"></script>
+</body>
+</html>

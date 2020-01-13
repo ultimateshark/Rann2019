@@ -1,0 +1,625 @@
+
+body{
+	background-color: #000;
+	overflow-x: hidden;
+	font-family:'Charm', cursive;
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+
+}
+
+
+.sponsors{
+  position:absolute;
+  top:500px;
+  width:100%;
+  z-index:99;
+}
+
+.s_txt{
+  font-size:2em;
+  color:#fff;
+}
+
+.sponsors ul{
+  position: relative;
+}
+
+.sponsors img{
+  width:160px;
+}
+
+.sponsors ul li{
+  display: inline-block;
+  padding-left:3%;
+}
+
+#particles-js{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height: 600%;
+  background-color: #191919/*222831*/;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+}
+
+
+
+
+.last_date{
+  width:60%;
+  font-size:1.4em;
+  position: absolute;
+  top:20px;
+  left:38%;
+  color:#fff;
+}
+
+
+ #body_cont{
+   display:none;
+ }
+#loading{
+   display:block;
+ }
+
+.tba{
+  font-size:1.2em;
+  color:#000;
+  float:'left';
+  margin-top: 53%;
+}
+
+
+
+/*.bgVideo{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index:-999;
+}*/
+/*
+.bgImg{
+  position: fixed;
+  right: 0;
+  bottom:0; 
+}*/
+
+
+
+.kiet_logo img{
+	width:90px;
+position:relative;
+
+}
+
+
+.menu{
+	color:#fff;
+  position: absolute;
+	right:60px;
+  top:20px;
+}
+
+.menu:hover{
+  cursor:pointer;
+}
+
+.menu div {
+	position: relative;
+  width: 48px;
+  height: 3px;
+  background-color: #fff;
+  margin: 8px 0;
+}
+
+.overlay {
+  font-family: 'Fugaz One', cursive;
+  height: 0;
+  width: 100%;
+  position: fixed; 
+  z-index: 999; 
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,1); 
+  overflow: hidden; 
+  transition: 0.6s; 
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%; 
+  width:100px;
+  text-align: left; 
+  margin-top: 30px;
+  margin-left:5%;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 3em;
+  color: #818181;
+  display: block; 
+  width:10px;
+  transition: 0.3s; 
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+  text-decoration: line-through;
+  color:#d34848;
+}
+
+
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 55px;
+  font-size: 80px;
+}
+
+
+
+
+
+.crow img{
+	width:620px;
+  transform: scaleX(-1);
+}
+
+.crow{
+	position:relative;
+	top:-20px;
+	left:30%;
+  background-color: blue;
+  width:0px;
+
+}
+
+
+.rann_logo{
+	font-family: 'Rock Salt', cursive;
+	font-size: 4em;
+	color:#d34848;
+	margin-left:170px;
+
+}
+
+.abt_rann{
+background-color:#d34848;
+transform: rotate(5deg);
+position:relative;
+top:100px;
+width:110%;
+left:-45px;
+height:400px;
+
+}
+
+
+.abt_rann div{
+	transform: rotate(-5deg);
+	margin-left:20px;
+
+}
+
+.abt_rann_txt{
+	color:#fff;
+	position: relative;
+  top:70px;
+  left:180px;
+	font-size: 3em;
+}
+
+.abt_rann_cont{
+  position: relative;
+  left:700px;
+  top:30px;	
+	width:400px;
+	font-size:1.4em;
+	text-align:justify;
+	color:#fff;
+}
+
+
+.events_box{
+  position:relative;
+  background-color:rgba(255,255,255,0.5);
+  height:1180px;
+  width:110%;
+  left:-80px;
+  top:100px;
+  transform: rotate(5deg);
+}
+
+.events_wrap{
+  transform: rotate(-5deg);
+}
+
+.events_txt{
+  background-color:#000;
+  width:200px;
+  height:50px;
+  color:#fff;
+  position:relative;
+  left:40%;
+  top:-40px;
+  font-size:2.5em;
+  padding: 10px;
+  text-align:center;
+  transform: skew(-18deg);
+
+}
+
+
+.events{
+  position:relative;
+  top:40px;
+  width:90%;  
+  margin-left:6%;
+  
+}
+
+.events img{
+  width:200px;
+  border:1px solid #000;
+  padding: 30px;
+  margin-left:5%;
+  margin-top:0.5%;
+  box-shadow:6px 5px 2px 1px rgba(0,0,0,0.2);
+  background-color:rgba(255,255,255,0.2);
+}
+
+.events img:hover{
+  opacity:0.7;
+  cursor:pointer;
+}
+
+.cricket{
+  height:200px;
+}
+
+.chess{
+  height:205px;
+  width:150px !important;
+  padding-left:55px !important;
+  padding-right:55px !important;
+}
+
+.khokho{
+  height:200px;
+}
+
+.volley{
+  height:203px;
+}
+
+/**********************Events Ends ***************/
+
+.sp_guest_box{
+  position:relative;
+  background-color:rgba(255,255,255,0.7);
+  width:105%;
+  height:550px;
+  left:-8px;
+  top:0px;
+  z-index:11;
+}
+
+
+
+.sp_guest_txt{
+  background-color:#000;
+  width:280px;
+  height:50px;
+  color:#fff;
+  position:relative;
+  left:42%;
+  top:-40px;
+  font-size:2.5em;
+  padding: 10px;
+  text-align:center;
+  transform: skew(-18deg);
+  z-index:9;
+}
+
+
+
+.abt_kiet{
+  background-size:cover;
+  position:absolute;
+  top:2745px;
+  width:102%;
+  height:500px;
+  left:0;
+  z-index:1;
+}
+
+
+.abt_kiet::before {
+    content:"";
+    display: block;
+    height:500px;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    background-color:rgba(211, 72, 72,0.8);
+    z-index:-1;
+}
+
+.abt_kiet_cont{
+  font-size:1.8em;
+  color:#fff;
+  width:80%;
+  text-align: justify;
+  margin-left:8%;
+  margin-top:80px;
+}
+
+/**//**//**//**//**//**//**//**//**//**/
+
+.fun_events_box{
+  position:relative;
+  background-color:rgba(255,255,255,0.7);
+  width:110%;
+  left:-80px;
+  top:500px;
+}
+
+.fun_reg_btns{
+  position: relative;
+  top:500px;
+  left:300px;
+}
+
+.fifa_reg_btn{
+  margin-left:500px;
+}
+
+.pubg_reg_btn:hover{
+   cursor:pointer;
+    background-color: #fff;
+    color:#222831;
+    transition: 0.2s;
+}
+
+.fifa_reg_btn:hover{
+   cursor:pointer;
+    background-color: #fff;
+    color:#222831;
+    transition: 0.2s;
+
+}
+
+.fun_reg_btns button{
+    font-size:1.3em;
+    width:320px;
+    height:40px;
+    font-family: 'Nunito',sans-serif;
+    background-color:transparent;
+    border:2px solid #fff;
+    color:#fff;
+}
+
+.fun_events_txt{
+  background-color:#000;
+  width:280px;
+  height:50px;
+  color:#fff;
+  position:relative;
+  left:42%;
+  top:-40px;
+  font-size:2.5em;
+  padding: 10px;
+  text-align:center;
+  transform: skew(-18deg);
+  z-index:9;
+}
+
+
+.fun_events_name{
+  width:100%; 
+  height:550px;
+  display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+  display: flex;
+  position: absolute;
+  top:0px;
+  
+}
+
+
+.p1,.f1{
+  width:200px;
+
+}
+
+.flex {
+  flex: 1;
+}
+.hover:hover {
+  flex:2;
+  transition:0.3s;
+}
+
+.pubg {
+  display: none;
+  height:400px;
+}
+
+.fifa{
+  display: none;
+  height: 400px;
+}
+
+
+
+
+/**//**//**//**//**//**//**//**//**//**/
+
+
+.load_icon{
+width:100%;
+height:100%;
+background-color: #172027;
+position: fixed;
+top:0;
+left:0;
+}
+
+.load_icon img{
+  position: absolute;
+  top:250px;
+  left:38%;
+  padding-right:30px;
+  width:250px;
+}
+
+
+
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+
+
+
+.conv_box{
+  position: relative;
+  top:1220px;
+}
+
+
+.conv_wrap{
+  transform: rotate(-5deg);
+}
+
+.conv_txt{
+  background-color:#d34848;
+  width:200px;
+  height:45px;
+  color:#fff;
+  position:relative;
+  left:40%;
+  top:-40px;
+  font-size:2.5em;
+  padding: 10px;
+  text-align:center;
+  transform: skew(-18deg);
+
+}
+
+
+.conv{
+margin-left:200px;
+}
+
+.conv img{
+  width:380px;
+  margin-top:30px;
+  margin-left:100px;
+}
+
+
+.sp_guest_img{
+  height:500px;
+}
+
+
+
+/***********************************************/
+
+
+
+@media only screen and (max-width:841px){
+  .last_date{
+    transform: translate(-90px,0px);
+  }
+}
+
+
+@media only screen and (max-width:645px){
+  .conv{
+    margin-left:0px;
+  }
+}
+
+
+
+@media only screen and (max-width:591px){
+  .last_date{
+    transform: translate(-100px,0px);
+  }
+}
+
+
+@media only screen and (max-width:483px){
+  .last_date{
+    transform: translate(-80px,0);
+  }
+}
+
+@media only screen and (max-width:453px){
+.last_date{
+  width:40%;
+  position: absolute;
+  left:200px;
+}
+}
+
+@media only screen and (max-width:423px){
+  .load_icon img{
+    transform: translate(-90px,0);
+  }
+}
+
+
+@media only screen and (max-width: 405px){
+  .conv img{
+    width:300px;
+  }
+}
+
+@media only screen and (max-width: 367px){
+  .menu{
+    position: absolute;
+    right:15px;
+  }
+}
+
+/****************/
+
+
+@media only screen and (max-width:801px){
+  .fun_reg_btns{
+    position: relative;
+    top:300px;
+    left:80px;
+  }
+
+  /*.fifa_reg_btn{
+    position: relative;
+    top:-40px;
+  }*/
+}
+
+
+@media only screen and (max-width:625px){
+  .fun_reg_btns{
+    display: none;
+  }
+}

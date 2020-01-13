@@ -1,0 +1,77 @@
+
+
+.msg{
+	position: relative;
+	top:1070px;
+}
+
+.msg div{
+margin-top:45px;
+width:84%;
+margin-left:180px;
+font-size:1.3em;
+text-align:justify;
+
+}
+
+
+.dir div{
+	background-color: rgba(255,255,255,0.7);
+	padding: 30px;
+	color:#000;
+}
+
+
+
+.msg_pics{
+	position:absolute;
+	top:3810px;
+	width:250px;
+}
+
+.msg_pics img{
+	height:250px;
+	width:250px;
+	position:relative;
+	margin-top:160px;
+	margin-left:30px;
+	border-radius:50%;
+}
+
+
+.dir_pic{
+	position: relative;
+	top:1100px;
+	left:30px;
+	width:250px;
+	height:250px;
+}
+
+.dir_ad_pic{
+	position: relative;
+	top:1200px;
+	left:30px;
+	width:250px;
+	height:250px;
+}
+
+@media only screen and (max-width:833px){
+
+.msg{
+	display: none;
+}
+
+
+.conv_box{
+	display: none;
+}
+  .msg_pics{
+    display: none;
+  }
+
+  .msg div{
+  	margin-left:50px;
+  	width:95%;
+  }
+}
+

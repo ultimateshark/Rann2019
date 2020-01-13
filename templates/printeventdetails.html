@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rann 2019</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+	  function GetMemDetails(member_id)
+   {
+          const request = new XMLHttpRequest();
+          const key = member_id;
+
+          request.open('POST', '/Get-MemDetails');
+            request.onload = () => {
+                 const data = JSON.parse(request.responseText);
+                      document.getElementById(member_id).innerHTML = data[0];
+                      document.getElementById(member_id+"_aadhar").innerHTML=data[1];
+                      document.getElementById(member_id+"_food").innerHTML =data[2];
+            }
+        const data = new FormData();
+        data.append('member_id', key);
+        request.send(data);
+        return false;
+  };
+</script>
+
+<script>
+function myFunction(myid) {
+  var c = document.getElementById(myid).childElementCount;
+  if (c==1){
+  	document.getElementById(myid+"H").hidden=true;
+  }
+}
+</script>
+</head>
+<body>
+<div>
+	<h6></h6>
+</div>
+{% for i in event_data %}
+<div class="table-responsive" align="center">
+<h6 align="center">Team Details</h6>          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Team Name</th>
+        <th>Captain Name</th>
+        <th>Captain No.</th>
+        <th>Payment</th>
+        <th>Amount Paid</th>
+        <th>College</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{i.team_name}}</td>
+        <td>{{team_data[i.captain_id]["cap_details"].name}}</td>
+        <td>{{team_data[i.captain_id]["cap_details"].mob_no}}</td>
+        <td>{{i.payment}}</td>
+        <td>{{i.amt_paid}}</td>
+        <td>{{team_data[i.captain_id]["cap_details"].college}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="table-responsive" id="Single{{i.team_id}}H">   
+<h6 align="center">Teammembers Details</h6>       
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Member Name</th>
+        <th>Member Aadhar</th>
+        <th>Accomodation</th>
+      </tr>
+    </thead>
+    <tbody id="Single{{i.team_id}}">
+    	{% for l in range(1,members) %}
+    	{% set mem="member"+l|string+"_id" %}
+    	{% if i|attr(mem)!=None and l< members %}
+      <tr>
+        <td id="{{i|attr(mem)}}">{{mem}}</td>
+        <script type="text/javascript">GetMemDetails({{i|attr(mem)}})</script>
+        <td id="{{i|attr(mem)}}_aadhar">...</td>
+        <td id="{{i|attr(mem)}}_food">...</td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+      <script type="text/javascript"> myFunction('Single{{i.team_id}}') </script>
+    </tbody>
+  </table>
+</div>
+<hr>
+<br><br><br>
+{% endfor %}
+
+</body>
+
+</html>

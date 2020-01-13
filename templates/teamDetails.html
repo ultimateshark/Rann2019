@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RANN-KIET|TEAM DEATILS</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito|Rock+Salt|Raleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/teamdetails.css')}}">
+
+
+<script type="text/javascript">
+  
+  function teamCheck()
+   {
+          const request = new XMLHttpRequest();
+          const key = document.querySelector('#team_name').value;
+
+          request.open('POST', '/check-teamname');
+            request.onload = () => {
+                 const data = JSON.parse(request.responseText);
+                      /*document.getElementById("team_name").value=data[0]*/
+                     if (data[0]=="No") {
+                      document.getElementById("team_name").style.color = "green";
+                      document.getElementById("reg_btn").type="submit";
+                     }
+                     else{
+                      document.getElementById("team_name").style.color = "red";
+                      document.getElementById("reg_btn").type="button";
+                     }
+            }
+        const data = new FormData();
+        data.append('team', key);
+        data.append('event', "{{eventname}}");
+        request.send(data);
+        return false;
+  };
+
+
+  function partCheck(my_id)
+   {
+          const request = new XMLHttpRequest();
+          const key = document.getElementById(my_id).value;
+
+          request.open('POST', '/check-part');
+            request.onload = () => {
+                 const data = JSON.parse(request.responseText);
+                      /*document.getElementById(my_id).value=data[0]*/
+                     if (data[0]=="No") {
+                      document.getElementById(my_id).style.color = "green";
+                      document.getElementById("reg_btn").type="submit";
+                     }
+                     else{
+                      document.getElementById(my_id).style.color = "red";
+                      document.getElementById("reg_btn").type="button";
+                     }
+            }
+        const data = new FormData();
+        data.append('aadhar_no', key);
+        data.append('event', "{{eventname}}");
+        data.append('eventtype', "{{eventtype}}");
+        request.send(data);
+        return false;
+  };
+
+</script>
+
+
+</head>
+
+  <body>
+<nav>
+<div class="logo"><a href="/" style="">Rann</a></div>
+
+<div class="com_txt">Team Details</div>
+
+</nav>
+<div class="cap_det_box">
+  <h2 style="text-decoration:underline;text-decoration-style:dotted;">Event Type: {{eventtype}}</h2>
+  <h2 style="text-decoration:underline;text-decoration-style:double;">Captain Details</h2>
+  <h3>{{captain.name}}</h3>
+  <h3>{{captain.college}}</h3>
+  <h3>{{captain.father_name}}</h3>
+  <h3>{{captain.mob_no}}</h3>
+
+</div>
+
+<!-- <div class="team_det_txt">Team Details</div> -->
+
+<div class="input_box">
+<form action="/user/register-teaminfo-{{eventtype}}-{{eventname}}" method="POST"" method="POST">
+ 
+ <div class="cap_input">
+    <span class="team_name"><input type="text" name="team_name" id="team_name"  oninput="teamCheck()" placeholder="Team Name" required></span> &nbsp; &nbsp; &nbsp;  
+    <span class="cap_aad"><input type="number" name="aadhar_no" id="aadhar_no" maxlength="12" size="12" oninput="partCheck('aadhar_no')" placeholder="Captain's Aadhar Number/Id Number" required></span>
+    <br> Fooding & Lodging
+    <input type="radio" name="food_lodge" value="Yes" >Yes
+    <input type="radio" name="food_lodge" value="No" checked>No
+  </div>
+
+<div class="mem_box">
+<div style="" >
+  {% for i in range(1,members+1) %}
+        {% set required="required" %}
+        {% if i|int > min_members|int %}
+          {% set required="" %}
+        {% endif %}
+
+  <h3 class="mem_i">Member {{i}}</h3> <br>
+  <input type="text" name="name{{i}}" placeholder=" Full Name" {{required}}> <br><br>
+  <input type="text" name="aadhar_no{{i}}" id="aadhar_no{{i}}" maxlength="12" size="12" oninput="partCheck('aadhar_no{{i}}')" placeholder=" Aadhar Number/Id Number" {{required}}> <br><br>
+<div class="radio_btns">
+  Fooding & Lodging
+  <input type="radio" name="food_lodge{{i}}" value="Yes" >Yes
+  <input type="radio" name="food_lodge{{i}}" value="No" checked>No
+</div>  
+  {% endfor %}
+  <br><br>
+  <button type="submit" class="reg_btn" id="reg_btn">Register</button><br>
+</div>
+</div>
+
+</form>
+
+</div>
+
+
+</body>
+</html>

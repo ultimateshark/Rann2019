@@ -1,0 +1,334 @@
+@media only screen and (max-width: 1410px){
+
+
+	.events img{
+		margin-left:2%;
+	}
+}
+
+@media only screen and (max-width: 1200px){
+	.events img{
+		margin-left:1%;
+	}
+}
+
+
+
+@media only screen and (max-width:1140px){
+	.events img{
+		transform:scale(0.8);
+		margin-left:-2%;
+		margin-top:-4%;
+	}
+
+	.events{
+		margin-left:80px;
+		width:87%;
+	}
+
+	.abt_rann_cont{
+		position: relative;
+		left:540px;
+	}
+
+	.abt_rann_txt{
+		position: relative;
+		left:100px;
+	}
+}
+
+@media only screen and (max-width: 1042px){
+	.events{
+		margin-left:60px;
+		width:93%;
+	}
+
+
+
+	.events img{
+		margin-left:-3%;
+	}
+}
+
+@media only screen and (max-width:942px){
+	.events img{
+		margin-left:-4%;
+	}
+
+
+	.abt_rann_cont{
+		position: relative;
+		left:470px;
+	}
+
+	.abt_rann_txt{
+		position: relative;
+		left:100px;
+		top:150px;
+	}
+
+}
+
+@media only screen and (max-width:910px){
+	.events{
+		margin-left:80px;
+	}
+
+	.events img{
+		transform: scale(0.7);
+		margin-left:-8%;
+		margin-top:-8%;
+	}
+
+	.abt_rann_cont{
+		position: relative;
+		left:400px;
+	}
+
+	.abt_rann_txt{
+		position: relative;
+		left:70px;
+		top:100px;
+	}
+}
+
+@media only screen and (max-width:800px){
+	.events{
+		margin-left:150px;
+		width:84%;
+	}
+
+	.events img{
+		margin-top:-10%;
+	}
+
+	.abt_rann_cont{
+		position: relative;
+		left:307px;
+	}
+
+	.abt_rann_txt{
+		position: relative;
+		left:50px;
+		top:100px;
+		font-size: 2.5em;
+	}
+
+	
+}
+
+@media only screen and (max-width:710px){
+	.events{
+		margin-left:100px;
+		width:90%;
+	}
+
+	.events img{
+		margin-left:-10%;
+	}
+
+	.abt_rann_cont{
+		position: relative;
+		left:127px;
+		top:60px;
+	}
+
+	.abt_rann_txt{
+		position: relative;
+		left:50px;
+		top:20px;
+		font-size: 2.5em;
+	}
+
+	.abt_rann{
+		width:125%;
+	}
+
+
+
+}
+
+@media only screen and (max-width:633px){
+	.events img{
+		transform: scale(0.7);
+		margin-left:-12.5%;
+	}
+
+}
+
+@media only screen and (max-width:600px){
+	.events img{
+		transform: scale(0.6);
+		margin-left:-15%;
+		margin-top:-17%;
+	}
+
+	.events{
+		width:94%;
+	}
+}
+
+@media only screen and (max-width:546px){
+	.events img{
+		margin-left:-17%;
+	}
+
+	.events{
+		margin-left:105px;
+	}
+
+	
+}
+
+@media only screen and (max-width:538px){
+	.events img{
+		transform: scale(0.5);
+		margin-left:-24%;
+		margin-top:-24%;
+	}
+
+	.events{
+		margin-top:40px;
+		margin-left:160px;
+		width:89%;
+	}
+
+	.abt_rann_cont{
+		position: relative;
+		left:57px;
+		top:60px;
+	}
+
+	.abt_rann_txt{
+		position: relative;
+		left:50px;
+		top:20px;
+		font-size: 2.5em;
+	}
+
+
+}
+
+@media only screen and (max-width:512px){
+	.events{
+		margin-left:110px;
+	}
+}
+
+@media only screen and (max-width:488px){
+	.events img{
+		margin-left:-28%;
+	}
+	.events{
+		margin-left:130px;
+	}
+
+
+}
+
+@media only screen and (max-width:458px){
+	.events{
+		margin-left:120px;
+	}
+
+	.events img{
+		margin-left:-30%;
+		margin-top:-29%;
+	}
+
+	.abt_rann_cont{
+		position: relative;
+		left:35px;
+		top:60px;
+		font-size:1.3em;
+	}
+
+	.abt_rann_txt{
+		position: relative;
+		left:50px;
+		top:20px;
+		font-size: 2.5em;
+	}	
+
+	.sp_guest_txt{
+		font-size:1.5em;
+		width:200px;
+		height:35px;
+		margin-left:-20px;
+	}
+}
+
+@media only screen and (max-width:444px){
+	.events{
+		margin-left:170px;
+	}
+
+	.abt_rann_cont{
+		position: relative;
+		left:57px;
+		top:60px;
+		width:330px;
+	}
+
+	
+
+	
+}
+
+@media only screen and (max-width: 400px){
+	.events{
+		margin-left:150px;
+	}
+
+}
+
+@media only screen and (max-width: 380px){
+	.events{
+		margin-left:130px;
+	}
+
+	.abt_rann_cont{
+		position: relative;
+		left:30px;
+		top:60px;
+		width:330px;
+		font-size:1.2em;
+	}
+
+
+	.sp_guest_box{
+		height:400px;
+	}
+
+}
+
+@media only screen and (max-width:356px){
+	.events img{
+		margin-left:-38%;
+		margin-top:-36%;
+	}
+
+	.events{
+		margin-left:170px;
+	}
+
+	.abt_rann_cont{
+		position: relative;
+		left:30px;
+		top:60px;
+		width:300px;
+		font-size:1.1em;
+	}
+
+}
+
+@media only screen and (max-width:326px){
+	.events img{
+		margin-left:-42%;
+	}
+
+	.events{
+		margin-left:140px;
+	}
+}
+

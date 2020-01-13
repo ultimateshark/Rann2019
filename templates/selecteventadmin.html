@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rann 2019</title>
+</head>
+<body>
+	<h1 align="center">Wellcome Admin</h1>
+<div align="center">
+	<form action="/rann2k19/k/admin" method="POST">
+		<label for="selected_event">Select An event</label>
+		<select name="selected_event">
+			{% for i in authority %}
+			<option value="{{i}}">{{i}}</option>
+			{% endfor %}
+		</select>
+		<button type="submit">Submit</button>
+	</form>
+</div>
+</body>
+</html>

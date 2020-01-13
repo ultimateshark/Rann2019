@@ -1,0 +1,1030 @@
+
+@media only screen and (max-width:1431px){
+	.events_box{
+		width:120%;
+		height:166vh;
+	}
+
+	.sp_guest_box{
+		width:120%;
+	}
+	.dir_ad_pic{
+		position: absolute;
+		left:1220px;		
+	}
+}
+
+@media only screen and (max-width:1370px){
+	.dir_msg_cont{
+		font-size:1.1em;
+	}
+
+	.dir_ad_msg{
+	position: absolute;
+	left:-20%;
+}
+
+.dir_ad_pic{
+	position: absolute;;
+	left:1270px;
+}
+
+}
+@media only screen and (max-width:1352px){
+	.events img{
+		margin-left:1%;
+	}
+
+	.events{
+		transform: translate(40px,0px);
+	}
+}
+
+@media only screen and (max-width:1152px){
+	.events{
+		transform: translate(0px,0px);
+	}
+}
+
+
+@media only screen and (max-width:1293px){
+	.dir_ad_msg{
+		position: absolute;
+		left:-26%;
+	}
+
+	.dir_msg{
+		position: absolute;
+		left:2%;
+	}
+}
+
+@media only screen and (max-width: 1281px){
+	.events{
+
+	}
+}
+
+@media only screen and (max-width: 1230px){
+   .dir_ad_pic{
+		position: absolute;;
+		left:1200px;
+		width:250px;
+		height: 280px;
+	}
+}
+
+
+@media only screen and (max-width: 1145px){
+	.dir_pic{
+		width:270px;
+		height:280px;
+	}
+
+	.dir_msg_cont{
+		width:55%;
+		margin-left:210px;
+	}
+
+	.dir_ad_msg_cont{
+		width:48%;
+		height:530px;
+
+	}
+
+	.dir_ad_msg{
+		position: absolute;
+		left:-29.7%;
+	}
+
+	.dir_ad_msg_txt{
+		margin-left:150px;
+	}
+
+	.dir_ad_pic{
+		position: absolute;
+		left:1099px;
+	}
+}
+
+@media only screen and (max-width:1117px){
+	.events img{
+		width:150px;
+	}
+
+	.events{
+		
+	}
+
+	.events_box{
+		height:143vh;
+	}
+
+	.chess{
+		width:100px !important;
+		height:150px;
+	}
+
+	.cricket{
+		height:150px;
+	}
+	.khokho{
+		height:150px;
+	}
+
+	.volley{
+		height:150px;
+	}
+
+	.sp_guest_box{
+		position:absolute;
+		top:1958px;
+	}
+
+	.abt_kiet{
+		position: absolute;
+		top:2508px;
+	}
+
+	.abt_kiet_cont{
+		font-size:1.8em;
+		margin-top:40px;
+	}
+
+	.fun_events_box{
+		position: absolute;;
+		top:3008px;
+	}
+
+	.fun_events img{
+		width:50%;
+	}
+
+	.flex{
+		flex:none;
+	}
+
+	.dir_msg{
+		position: absolute;
+		top:3650px;
+	}
+
+	.dir_ad_msg{
+		position: absolute;
+		top:4330px;
+	}
+
+
+}
+
+@media only screen and (max-width:1105px){
+	.events{
+		transform:translate(50px,0px);
+	}
+}
+
+
+@media only screen and (max-width:1082px){
+	.events{
+		transform: translate(20px,0px);
+	}
+}
+
+
+@media only screen and (max-width:1079px){
+	.crow{
+		transform: translate(-15%,0);
+	}
+
+	.dir_ad_pic{
+		position: absolute;
+		left:1039px;
+		width:220px;
+		height:230px;
+	}
+
+	.dir_msg_cont{
+		height:570px;
+	}
+}
+
+@media only screen and (max-width:966px){
+	.abt_kiet_cont{
+		font-size: 1.6em;
+	}
+
+	.dir_ad_msg{
+		position: absolute;
+		left:-35%;
+		top:4400px;
+	}
+
+	.dir_ad_msg_cont{
+		height:560px;
+	}
+
+	.dir_msg_cont{
+		height:640px;
+	}
+
+	.dir_ad_pic{
+		position: absolute;
+		left:990px;
+	}
+}
+
+@media only screen and (max-width:924px){
+	.dir_msg_cont{
+		width:64%;
+	}
+
+	.dir_ad_msg_cont{
+		height:620px;
+	}
+}
+
+@media only screen and (max-width: 904px){
+	.events img{
+		width:120px;
+	}
+
+
+
+	.chess{
+		height:120px;
+		width:70px !important;
+	}
+
+	.khokho{
+		height:120px;
+	}
+
+	.cricket{
+		height:120px;
+	}
+
+	.volley{
+		height:120px;
+	}
+
+	.sp_guest_box{
+		position: absolute;
+		top:1877px;
+	}
+
+	.abt_kiet{
+		position: absolute;
+		top:2427px;
+	}
+
+	.abt_kiet_cont{
+		font-size:1.6em;
+		margin-top:60px;
+	}
+
+	.fun_events_box{
+		position: absolute;
+		top:2927px;
+	}
+
+	.dir_msg{
+		position: absolute;
+		top:3580px;
+	}
+
+	.dir_ad_msg{
+		position: absolute;
+		top:4360px;
+	}
+}
+
+
+@media only screen and (max-width: 871px){
+	.dir_pic{
+		display: none;
+	}
+
+	.dir_msg_cont{
+		margin-left:10px;
+		width:78%;
+		height:680px;
+		font-size:1.25em;
+	}
+
+	.dir_ad_pic{
+		display: none;
+	}
+
+	.dir_ad_msg_cont{
+		width:61%;
+		margin-left:320px;
+		height:540px;
+	}
+}
+
+@media only screen and (max-width:836px){
+	.abt_kiet_cont{
+		
+		font-size: 1.5em;
+		width:90%;
+	}
+}
+
+@media only screen and (max-width:825px){
+	.abt_rann_txt{
+		position:absolute;
+		top:130px;
+		left:30px;
+	}
+
+	.abt_rann_cont{
+		position: absolute;
+		top:45px;
+		left:36%;
+		font-size:1.3em;
+	}
+
+	.abt_rann{
+		width:120%;
+		height:300px;
+	}
+
+	.events_box{
+		position: absolute;
+		top:996px;
+		height: 150vh;
+		width:120%;
+	}
+
+	.events{
+		transform: translate(70px,0px);
+
+	}
+
+	.sp_guest_box{
+		position: absolute;
+		top:1757px;
+	}
+
+	.abt_kiet{
+		position: absolute;
+		top:2307px;
+	}
+
+	.abt_kiet_cont{
+		font-size: 1.6em;
+	}
+
+	.fun_events_box{
+		position: absolute;
+		top:2807px;
+	}
+
+	.dir_msg{
+		position: absolute;
+		top:3490px;
+	}
+
+
+	.dir_ad_msg_cont{
+		margin-left:300px;
+	}
+}
+
+
+@media only screen and (max-width:800px){
+	.events{
+		transform: translate(50px,0);
+
+	}
+
+	.crow{
+		transform: translate(-25%,0);
+	}
+}
+
+@media only screen and (max-width:777px){
+	.events{
+		transform: translate(55px,25px);
+	}
+
+	.events_box{
+		position: absolute;
+		top:999px;
+	}
+
+	.events img{
+		width:110px;
+	}
+	.cricket{
+		height:110px;
+	}
+
+	.chess{
+		width:62px !important;
+		height:115px;
+	}
+
+	.khokho{
+		height:110px;
+	}
+	.volley{
+		height:110px;
+	}
+}
+
+
+@media only screen and (max-width:746px){
+	.events img{
+		width:90px;
+		transform: translate(10px,0);
+	}
+
+	.cricket{
+		height:90px;
+	}
+
+	.chess{
+		height:90px;
+		width:40px !important;
+	}
+
+	.khokho{
+		height:90px;
+	}
+
+	.volley{
+		height: 90px;
+	}
+
+	.sp_guest_box{
+		position: absolute;;
+		top:1700px;
+	}
+
+	.abt_kiet_cont{
+		
+		font-size: 1.5em;
+		width:90%;
+		margin-left:20px;
+	}
+
+	.abt_kiet{
+		position: absolute;
+		top:2250px;
+	}
+
+	.fun_events_box{
+		position: absolute;;
+		top:2750px;
+	}
+
+	.dir_msg{
+		position: absolute;
+		top:3350px;
+	}
+
+	.dir_msg_cont{
+		height:800px;
+	}
+	.dir_msg_txt{
+		font-size: 1.4em;
+		margin-left:80px;
+	}
+
+	.dir_ad_msg{
+		position: absolute;
+		top:4250px;
+		margin-left: -30px;
+	}
+
+	.dir_ad_msg_cont{
+		height: 600px;
+	}
+
+	.dir_ad_msg_txt{
+		font-size: 1.4em;
+		margin-left:80px;
+	}
+}
+
+@media only screen and (max-width:685px){
+	.abt_rann_txt{
+		font-size:2em;
+	}
+
+	.abt_rann_cont{
+		font-size:1.2em;
+		position: absolute;
+		left:240px;
+	}
+
+	.abt_rann{
+		height:250px;
+	}
+
+	.events{
+		transform: translate(45px,0px);
+	}
+
+	.events_box{
+		position: absolute;
+		top:946px;
+	}
+
+	.sp_guest_box{
+			position: absolute;;
+			top:1640px;
+		}
+
+		.abt_kiet_cont{
+		
+		width:90%;
+		margin-top:15px;
+	}
+
+	.abt_kiet{
+		position: absolute;
+		top:2191px;
+	}
+
+	.fun_events_box{
+		position: absolute;;
+		top:2691px;
+	}
+
+	.dir_ad_msg{
+		margin-left: -50px;
+	}
+
+}
+
+@media only screen and (max-width: 663px){
+	.events img{
+		width:75px;
+	}
+
+	.chess{
+		padding-left:48px !important;
+		padding-right:48px !important;
+		height:80px;
+	}
+
+	.cricket{
+		height:74px;
+	}
+
+	.khokho{
+		height:74px;
+	}
+
+	.volley{
+		height:74px;
+	}
+
+	.events{
+		transform: translate(45px,5px);
+	}
+
+	.crow img{
+		width:500px;
+	}
+
+	.crow{
+		transform: translate(-140px,75px);
+	}
+
+	.rann_logo{
+		transform: translate(-50px,0);
+	}
+
+}
+
+@media only screen and (max-width: 638px){
+	.dir_msg_rest , .dir_ad_msg_rest{
+		display: none;
+	}
+
+	.dir_msg_cont{
+		height: 510px;
+	}
+	.dir_ad_msg_cont{
+		height:450px;
+	}
+
+	.dir_ad_msg{
+		position: absolute;
+		top:4000px;
+	}
+}
+
+@media only screen and (max-width:621px){
+	.abt_rann_txt{
+		position: absolute;
+		top:50px;
+		left:50px;
+	}
+
+	.abt_rann_cont{
+		position:absolute;
+		left:100px;
+		top:100px;
+	}
+
+	.abt_rann{
+		height:280px;
+	}
+
+	.events_box{
+		position: absolute;
+		top:978px;
+	}
+
+	.events_txt{
+		font-size:1.9em;
+		width:170px;
+		height:40px;
+	}
+}
+
+
+
+@media  screen and (max-width:600px){
+	.events{
+		transform:translate(40px,0px);
+	}
+
+	.sp_guest_box{
+		width:140%;
+	}
+
+	.events_box{
+		width:150%;
+	}
+
+	.abt_kiet{
+		width:120%;
+	}
+
+	.abt_kiet_cont{
+		width:80%;
+		margin-left:70px;
+
+	}
+
+	.flex{
+		flex: none;
+	}
+
+	.fun_events_name {
+		width:130%;
+	}
+
+	.fun_events_name img{
+		height:400px;
+	}
+
+	.dir_msg{
+		position: relative;
+		top:3040px;
+		left:10%;
+	}
+
+	.dir_msg_cont{
+		height:600px !important;
+	}
+}
+
+
+@media only screen  and (max-width:590px){
+	.events{
+		transform: translate(52px,-10px);
+		width:70%;
+	}
+
+	.abt_rann_cont{
+		position: absolute;
+		top:80px;
+	}
+
+	.abt_rann_txt{
+		position: absolute;;
+		top:40px;
+	}
+
+	.sp_guest_box{
+		position: absolute;;
+		top:1740px;
+	}
+
+	.sp_guest_txt{
+		font-size:1.9em;
+		width:240px;
+		height:40px;
+		position: absolute;
+		left:250px;
+	}
+	.abt_kiet_cont{
+		margin-left:7%;
+	}
+
+	.dir_msg_cont{
+		height: 560px;
+		margin-left: -40px;
+	}
+
+	.dir_ad_msg_cont{
+		height:540px;
+	}
+	.dir_ad_msg{
+		margin-left:-80px;
+	}
+
+}
+
+
+@media only screen and (max-width:540px){
+		.abt_kiet_cont{
+		
+		font-size:1.4em;
+		width:80%;
+		margin-top:45px;
+		margin-left:40px;
+	}
+
+	.fun_events_txt{
+		font-size:1.9em;
+		width:240px	;
+		height:40px;
+	}
+
+	.dir_ad_msg{
+		margin-left:-50px;
+	}
+
+	.dir_msg_cont{
+		width:90%;
+		margin-left:-30px;
+	}
+
+	.dir_ad_msg{
+		position: absolute;
+		top:3909px;
+	}
+
+}
+
+@media only screen and (max-width: 516px){
+	.events{
+		width:84%;
+	}
+
+	 .dir_msg_cont{
+		font-size:1.1em;
+		height:450px !important;
+	}
+
+	.dir_msg_txt{
+		font-size:1.2em;
+		margin-left:40px;
+	}
+
+	.dir_ad_msg_cont{
+		font-size:1.1em;
+	}
+
+	.dir_ad_msg{
+		position:relative;
+		top:3100px;
+		width:139%;
+		margin-left:-80px;
+	}
+
+	.dir_ad_msg_txt{
+		font-size:1.2em;
+		margin-left:30px;
+		width:130%;
+	}
+}
+
+
+@media only screen and (max-width:502px){
+	.crow img{
+		width:450px;
+	}
+	.crow{
+		transform: translate(-28%,20%);
+	}
+	.rann_logo{
+		transform: translate(-88px,0);
+	}
+
+	.abt_rann_cont{
+		position: absolute;;
+		left:50px;
+	}
+
+	.abt_rann_txt{
+		position: absolute;;
+		top:30px;
+		left:40px;
+	}
+
+		.abt_kiet_cont{
+		
+		width:80%;
+		margin-top:10px;
+		margin-left:25px;
+	}
+}
+
+@media only screen and (max-width:447px){
+	.events img{
+		width:50px;
+
+	}
+
+	.fun_events_name img{
+		height:300px;
+	}
+
+
+
+	.chess{
+		height:52px;
+		padding-left:36px !important;
+		padding-right:36px !important;
+	}
+
+	.cricket{
+		height:50px;
+	}
+
+	.khokho{
+		height:50px;
+	}
+
+	.volley{
+		height:50px;
+	}
+
+
+	.sp_guest_box{
+		position: absolute;
+		top:1520px;
+	}
+
+	.sp_guest_txt{
+		position: absolute;
+		left:180px;
+	}
+
+	.abt_kiet_cont{
+		font-size:1.3em;
+		margin-left:3px;
+		margin-top:30px;
+	}
+
+	.abt_kiet{
+		position:absolute;
+		top:2070px;
+	}
+
+	.fun_events_box{
+		position: absolute;
+		top:2570px;
+	}
+
+	.dir_msg{
+		position: absolute;
+		top:2950px;
+	}
+
+	.dir_ad_msg{
+		margin-left:-90px;
+		position: absolute;
+		top:3650px;
+	}
+
+}
+@media only screen and (max-width:440px){
+
+.crow img{
+	width:390px;
+}
+.rann_logo{
+	transform:translate(-120px,0px);
+}
+
+.crow{
+	transform: translate(-120px,90px);
+}
+
+.abt_rann_cont{
+	font-size:1em;
+	width:350px;
+}
+
+.dir_msg_cont{
+	height: 550px !important;
+}
+
+.dir_ad_msg{
+	margin-left: -120px;
+}
+
+}
+
+
+@media only screen and (max-width:404px){
+	.abt_kiet_cont{
+		font-size:1.2em;
+	}
+}
+
+@media only screen and (max-width:389px){
+	.abt_rann_cont{
+		width:300px;
+		position: absolute;
+		left:40px;
+	}
+
+	.fun_events_name img{
+		height:250px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 881px){
+	.events{
+		transform: translate(51px,-60px);
+	}
+
+	.events_box{
+		position: absolute;
+		top:982px;
+	}
+
+	.events_txt{
+		margin-left:-40px;
+	}
+
+	.sp_guest_box{
+		position: absolute;
+		top:1590px;
+	}
+
+	.abt_rann{
+		width:130%;
+	}
+
+	.abt_rann_txt{
+		position: absolute;
+		left:80px;
+	}
+
+	.abt_rann_cont{
+		position: absolute;
+		left:100px;
+	}
+
+	.volley{
+		height:50px;
+	}
+}
+
+@media only screen and (max-width:351px){
+	.events{
+		transform: translate(80px,0px);
+	}
+	.events img{
+		width:80px;
+	}
+
+	.cricket{
+		height:80px;
+	}
+
+	.chess{
+		height:80px;
+		padding-left:50px !important;
+		padding-right:50px !important;
+	}
+
+	.khokho{
+		height:80px;
+	}
+
+	.volley{
+		height: 80px;
+	}
+
+	.rann_logo{
+		font-size:3em;
+		margin-left:200px;
+	}
+}
+
+

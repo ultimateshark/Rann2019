@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{event.name}}</title>
+  <style type="text/css">
+  	.bg {
+  background: url("{{url_for('static',filename=fname)}}") fixed center no-repeat;
+  height:400px;
+  width:100%;
+  background-size:cover;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+
+  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/events.css')}}">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand|Nunito" rel="stylesheet">
+</head>
+<body>
+	<div class="bg">
+		<div class="event_box">
+       <div>
+        
+        {% if participated_in|length >0 %}
+        <h4 align="center" style="margin-bottom: 2px;">Already Participated in</h4><br>
+              {% for i in participated_in %}
+              <div align="center" style="font-size: 1.1em;">{{i.team_type}} 
+                  <button class="pay_btn">
+                    {% if not i.payment %}
+                     <a href="/user/makepayment-{{event.name}}-{{i.team_type}}-{{i.team_id}}"> Pay:{{i.amt_paid}} </a>
+                    {% else %}
+                      Paid
+                    {% endif %}
+                  </button> 
+              </div>
+              {% endfor %}
+        {% endif %}
+       </div>
+		<div class="event_name">{{event.name.upper()}}</div> 
+      <a href="{{redir}}" style="text-decoration: none;">
+        <button class="reg_btn"  >
+          Register
+        </button>
+      </a>
+		<div class="amount">
+
+      {% for i in event.amount.split("-") %}
+
+   <!--  &#8377 --> <span>{{i}}</span>
+      {% endfor %}
+  </div>
+	</div>
+
+	</div>
+
+
+<div class="rules_txt">Rules</div>
+	<ul class="rules">
+    {% if event.name=="Pubg" or event.name=="Fifa" %}
+    {% else %}
+    <li style="color: #d34848">It is Mandatory To Bring Your College ID and one Government ID!!!</li>
+    <li style="color: #d34848">It is Mandatory To Bring NOC From Your College!!!</li>
+    {% endif %}
+		<!-- <li>{{event.rules}}</li> -->
+    {% for i in event.rules.split("-") %}
+    <li>{{i}}</li>
+    {% endfor %}
+	</ul>
+
+<div class="cord_det">
+  
+  <div style="font-size:1.2em;color: teal;" align="center">Accomodation Rs.600 Per Person</div>
+	
+    <div class="cord_head">Coordinator Details</div>
+		<br>
+<div class="cord_cont" align="center">
+  <div>{{event.stu_co}}</div>
+  <div>{{event.stu_co_contact.split("-")[0]}}</div>
+  <div>{{event.teach_co}}</div>
+  <div>{{event.stu_co_contact.split("-")[1]}}</div>
+</div>
+
+</body>
+</html>

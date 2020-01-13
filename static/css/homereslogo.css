@@ -1,0 +1,81 @@
+@media only screen and (max-width:1115px){
+	.crow{
+		transform: translate(-130px,0px);
+	}
+}
+
+
+@media only screen and (max-width:749px){
+	.abt_kiet{
+		position: absolute;
+		top:2705px;
+	}
+}
+
+
+@media only screen and (max-width: 748px){
+	.crow{
+		transform: translate(-170px,0px);
+	}
+
+	.crow img{
+		width:540px;
+	}
+}
+
+@media only screen and (max-width: 517px){
+	.crow img{
+		width:470px;
+	}
+
+	.crow{
+		transform: translate(-140px,10px);
+	}
+
+	.rann_logo{
+		margin-left:110px;
+	}
+
+	.abt_kiet{
+		position: absolute;
+		top:2665px;
+	}
+}
+
+@media only screen and (max-width:459px){
+	.crow img{
+		width:400px;
+	}
+
+	.crow{
+		transform: translate(-125px,30px);
+	}
+
+	.rann_logo{
+		font-size:3em ;
+	}
+
+	.abt_kiet{
+		position: absolute;
+		top:2585px;
+	}
+}
+
+@media only screen and (max-width:390px){
+	.crow img{
+		width:350px;
+	}
+
+	.abt_kiet{
+		position: absolute;
+		top:2555px;
+	}
+	.crow{
+		transform: translate(-110px,30px);
+	}
+
+	.rann_logo{
+		margin-left:87px;
+	}
+}
+

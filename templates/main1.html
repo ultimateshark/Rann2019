@@ -1,0 +1,125 @@
+<html>
+<head>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt|Fredoka+One|Dosis|Bungee" rel="stylesheet">
+	 
+<script type="text/javascript">
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+      alert({{ message }})
+      {% endfor %}
+      {% endif %}
+{% endwith %}
+</script>
+</head>
+<body>
+	<div class="overlay" id="homesection"></div>
+	<div class="kiet"><image src="{{url_for('static',filename='images/kietlogo.png')}}" style="height:16%;margin-top:-40px;margin-left:-30px;">K.I.E.T</div>
+	<img src="{{url_for('static',filename='images/crowred.gif')}}" style="z-index:9;width:40%;position:absolute;left:28%;top:20%;height:50%;">
+	<div class="logo_txt">RANN'19</div>
+<div class="video_container">
+<video src="{{url_for('static',filename='images/Teaser.mp4')}}" autoplay muted loop class="video" id="backvideo">
+</div>
+
+
+<div class="menu_bar nav_beforescroll" style="color:#fff;">
+	<div><a href="#aboutsection" style="text-decoration: none;">About</a></div>
+	<div><a href="/loginpage/direct"  style="text-decoration: none;">Login</a></div>
+	<div><a href="#eventsection"  style="text-decoration: none;">Events</a></div>
+  <div><a href="/committee" style="text-decoration: none;">Committee</a></div>
+</div>
+
+<div class="about" id="aboutsection">
+  <div class="about_rann_box">
+    <div class="abt_rann_txt">About Rann</div>
+    <img src="{{url_for('static',filename='images/aboutrann.jpg')}}" height="50%" style="margin-left: 10%">
+      <div class="abt_rann_cont">
+      	
+      	<br>
+      	Discover unique adventures to experience with people near you
+Do amazing things! Meet awesome people!
+Search around interests, date or location settings
+Create an adventure and get new people together
+OFFICIAL SPONSOR OF RANN 2019
+      </div>
+  </div>
+
+  <div class="about_kiet_box">
+    <div class="abt_kiet_txt">About KIET</div>
+    <img src="{{url_for('static',filename='images/aboutkiet.jpeg')}}" height="30%" style="margin-left: 20%">
+    <div class="abt_kiet_cont">
+    	
+    	<br>
+      Krishna Institute of Engineering & Technology (KIET) was established in 1998 by Krishna Charitable Society at Ghaziabad, U.P. It is located at Ghaziabad – Meerut Road. Presently KIET Group of Institutions has more than 5600 students on its roll, a substantial growth in 20 years, to meet the need of quality technical education in U.P.<br><br>
+The institute has gained a distinct image as an outstanding educational colossal among technical institutions of Uttar Pradesh, due to its inclination towards innovative and skill-based education. It's consistent belief in 'Achieving High' is aptly reflected in its academics, extracurricular activities and placements.
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+<div class="events" id="eventsection">
+
+<div class="row">
+    <div class="col-sm-3" ><a href="/events/Cricket"><img src="{{url_for('static',filename='images/cricket.png')}}"></a></div>
+    <div class="col-sm-3" ><a href="/events/Tabletennis"><img src="{{url_for('static',filename='images/tt.png')}}"></a></div>
+    <div class="col-sm-3" ><a href="/events/Football"><img src="{{url_for('static',filename='images/football.png')}}"></a></div>
+    <div class="col-sm-3" ><a href="/events/Basketball"><img src="{{url_for('static',filename='images/basketball.png')}}"></a></div>
+</div>
+
+<div class="row2">
+    <div class="col-sm-3" ><a href="/events/Badminton"><img src="{{url_for('static',filename='images/badminton.png')}}"></a></div>
+    <div class="col-sm-3" ><a href="/events/Lawntennis"><img src="{{url_for('static',filename='images/tennis.png')}}"></a></div>
+    <div class="col-sm-3" ><a href="/events/Khokho"><img src="{{url_for('static',filename='images/khokho.png')}}" ></a></div>
+    <div class="col-sm-3" ><a href="/events/Chess"><img src="{{url_for('static',filename='images/chess.png')}}" style="width:60%;"></a></div>
+</div>
+
+<div class="row3">
+    <div class="col-sm-3" ><a href="/events/Vollyball"><img src="{{url_for('static',filename='images/volley.png')}}"></a></div>
+    <div class="col-sm-3" ><a href="/events/Carrom"><img src="{{url_for('static',filename='images/carrom.png')}}"></a></div>
+    <div class="col-sm-3" ><a href="/events/Pool"><img src="{{url_for('static',filename='images/pool.png')}}"></a></div>
+</div> 
+
+
+
+</div>
+
+
+<footer>
+
+<div class="txt1">KIET-GHAZIABAD © Copyright 2018, All Rights reserved</div>
+<div class="txt2">Design &amp; Developed by <a href="https://ultimateshark.in/" target="_blank" style="color:#fff;text-decoration:underline;">Ultimate Shark</a></div>
+
+</footer>
+
+<script>
+
+
+$(document).ready(function(){
+	$(window).scroll(function(){
+		var scroll=$(window).scrollTop();
+		
+	 
+	 if(scroll>680){
+	 		$(".menu_bar").addClass("nav_scroll");
+	 	}else{
+	 		$(".menu_bar").removeClass("nav_scroll");
+	 	}
+	});
+});
+
+
+
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+body{
+ 	background-color:#222831;
+ 	
+ 	font-family: 'Varela Round', sans-serif;
+}
+
+nav{
+	background-color:#cd4545;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%; 
+    height:55px;
+    color:#fff;
+}
+
+
+
+.com_txt{
+    margin-left:45%;
+    font-size:2em;
+    position: absolute;
+    top:8px;    
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo{
+    font-size:2em;
+    margin-left:2%;
+    font-family: 'Rock Salt',cursive;
+    margin-top:-10px;
+}
+
+.com_mem_head{
+	margin-top:100px;
+ 	color: #fff;	
+}
+
+.com_mem_head li{
+	list-style-type:none;
+	display: inline;
+	font-size:1.4em;
+}
+.com_mem_head li:not(:first-child){
+	margin-left:8%;
+}
+
+.com_mem_head li:hover{
+	cursor:pointer;
+}
+
+.hide{
+	display: none;
+}
+
+
+
+.active{
+	border-bottom:3px solid #cd4545;
+	
+}
+
+
+/*.prof_cont{
+	display: inline-block;
+  	margin: 20px;
+  	border: 1px solid black;
+  	overflow: hidden;
+  	margin-left:14%;
+  	border-radius: 100%;
+}
+
+ .prof_cont img {
+      display:block; 
+      width:180px;
+      height:200px;
+    }
+
+ .prof_cont:hover img {
+       transform: scale(1.3);
+  	   transform-origin: 50% 50%;  
+  	   opacity:0.8;
+    }
+*/
+
+
+
+.mem_C{
+	width:204px;
+	padding-bottom: 30px;
+	/*background-color:rgba(255,255,255,0.5);*/
+	margin-left:3%;
+	margin-top:2%;
+	display: inline-block;	
+	font-family: 'Kalam', cursive;
+	font-size:1.2em;
+	color:#fff;
+	/*box-shadow:4px 4px 2px 1px rgba(211,72,72,0.6);*/
+}
+
+.mem_C img{
+	width:160px;
+	margin-left:20px;
+	margin-top:0%;
+	border-radius:50%;
+
+}
+
+.abt_cmt_1 .mem_C{
+	margin-left:4%;
+}
+
+
+.abt_cmt_3 , .abt_cmt_2{
+	margin-left:5%;
+}
+
+
+
+a{
+    color:#fff;
+    text-decoration: none;
+}
+a:hover{
+    opacity:0.7;
+}
+
+.mem_det{
+	text-align: center;
+}
+
+/*.mem_det{
+	text-align:center;
+	margin-left:7px;
+	background-color:rgba(255,255,255,0.7);
+	width:175px;
+	height:30px;
+	padding:10px;
+	margin-top:-7px;
+
+}*/
+
+
+@media only screen and (max-width:423px){
+	.com_head{
+		transform: translate(-30px,0px);
+	}
+}
+
+@media only screen and (max-width:478px){
+	.abt_cmt_2 .mem_C img{
+		width:140px;
+	}
+
+	.abt_cmt_2 .mem_C{
+		font-size:1em;
+		width:180px;
+	}
+
+	.abt_cmt_2 .mem_C{
+		margin-left:8px;
+	}
+
+	
+}
+
+@media only screen and (max-width:423px){
+	.com_mem_head{
+		margin-left:-30px;
+	}
+}
+
+@media only screen and (max-width:393px){
+	.com_mem_head li:not(:first-child){
+		margin-left:20px;
+	}
+
+
+}

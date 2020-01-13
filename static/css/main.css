@@ -1,0 +1,347 @@
+	body{
+		overflow-x:hidden;
+		height:300vh;
+	}
+
+
+	.kiet{
+		font-size:8em;
+		left:33%;
+		top:7%;
+		z-index: 99999999;
+		position:absolute;
+		color:#c44444;
+		font-family: 'Bungee', cursive;
+	}
+
+	.logo_txt{
+	z-index:99999;
+	position:absolute;
+	left:40%;
+	top:70%;
+	color:#c44444;
+	font-family: 'Rock Salt', cursive;
+	font-size:4em;
+	}
+
+
+	.video_container {
+	  position: fixed;
+	  top: 0;
+	  bottom: 0;
+	  width: 100%;
+	  height: 100vh; 
+	  overflow: hidden;
+	}
+	.video_container video {
+	  min-width: 100%; 
+	  min-height: 100%; 
+	  width: auto;
+	  height: auto;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);
+	}
+
+	ul li{
+		list-style-type: none;
+		display: inline;
+		padding-left:30px;
+	}
+
+	ul li:hover{
+		font-size:1.2em;
+		color:red;
+	}
+
+	.menu_bar{
+		position:fixed;
+		top:90vh;
+		left:50%;
+		font-size:2em;
+		width:50%;
+		color:#fff;
+		z-index:999;
+	}
+
+	.menu_bar div{
+	display: inline-block;
+	margin-left: 6%;
+	}
+
+	.menu_bar div:hover{
+		color:#fee8;
+		transform: scale(1.5);
+	}
+	.overlay{
+		background-color:rgba(25,25,25,0.7);
+		height:100%;
+		width:100%;
+		z-index:99;
+		position:absolute;
+		top:0;
+		left:0;
+	}
+
+
+	.nav_beforescroll{
+		position:absolute;
+		top:90vh;
+		left:35%;
+	}
+
+
+	.about_box{
+		position: absolute;
+		width:70%;
+		height:80vh;
+		left:15%;
+		top:12%;
+		background-color:rgba(255,255,255,0.8);
+	}
+
+	.nav_scroll{
+		position:fixed;
+		top:0vh;
+
+	}
+
+	
+/*	.abt_ran_txt{
+		margin-left:42%;
+		margin-top:2%;
+		font-size:2em;
+	}*/
+
+	.events_txt{
+		font-size:2em;
+		position:absolute;
+		left:45%;
+		top:4%;
+	} 
+
+	.events{
+		position:absolute;;
+		top:200vh;
+		height:100vh;
+		width:100%;
+	}
+
+
+
+	.game_box{
+		background-color:#13abc4;
+		box-shadow:2px 3px 12px rgba(0,0,0,0.7);
+		height:30%;
+		width:15%;
+		position:relative;
+		margin-top:10%;
+		left:5%;
+	}
+
+	/*.row div{
+		background-color:red;
+		width:10%;
+		position: relative;
+		margin-left:10%;
+	}*/
+
+	.events img{
+			height:25%;
+			width:75%;
+		margin-left: 15%;
+	}
+
+	.row{
+		position: absolute;
+		left:4%;
+		top:12%;
+		width: 100%;
+	}
+
+	.row div{
+		margin-left:4%;
+		width:18%;
+		background-color:rgba(255,255,255,0.6);
+
+	}
+
+	.row div:hover{
+		background-color: #fff;
+		cursor:pointer;
+		transform: scale(1.1);
+		transition: 0.2s ease-in;
+	}
+
+	/*.row img{
+		height:25%;
+		margin-left: 60px;
+	}
+	*/
+
+	/******************************/
+
+	.row2{
+		position: absolute;
+		left:3%;
+		top:40%;
+		width: 100%;
+	}
+
+	.row2 div{
+		margin-left:4%;
+		width:18%;
+		background-color:rgba(255,255,255,0.6);
+	}
+
+	.row2 div:hover{
+		background-color: #fff;
+		cursor:pointer;
+		transform: scale(1.1);
+		transition: 0.2s ease-in;
+	}
+
+	/*.row2 img{
+		height:25%;
+		margin-left: 60px;
+	}
+	*/
+	/******************************/
+
+	/******************************/
+
+	.row3{
+		position: absolute;
+		left:3%;
+		top:68%;
+		width:100%;
+	}
+
+	.row3 div{
+		margin-left:4%;
+		width:18%;
+		background-color:rgba(255,255,255,0.6);
+	}
+
+	.row3 div:hover{
+		background-color: #fff;
+		cursor:pointer;
+		transform: scale(1.1);
+		transition: 0.2s ease-in;
+	}
+
+	/*
+	.row3 img{
+		height:20%;
+		margin-left: 60px;
+	}*/
+
+	/******************************/
+
+footer{
+	background-color:#191919;
+	width:100%;
+	height:7vh;
+	color:#fff;
+	position:absolute;
+	top:300vh;
+	font-family: 'Dosis', sans-serif;
+}
+
+footer .txt1{
+	font-size:1.4em;
+	margin-left:3%;
+	margin-top:0.8%;
+}
+
+footer .txt2{
+	font-size:1.4em;
+	text-align: right;
+	position: absolute;
+	top:0;
+	left:73%;
+	margin-top:0.8%;
+}
+
+.about{
+    position:relative;
+    top:100vh;
+    height:100vh;
+    /*background-color:black;*/
+    width:100%;
+  }
+
+  .about_rann_box{
+    position: absolute;
+    width:40%;
+    height:80vh;
+    left:0%;
+    top:12%;
+    background-color:rgba(255,255,255,0.8);
+  }
+  .abt_rann_txt{
+    margin-left:42%;
+    margin-top:2%;
+    font-size:2em;
+  }
+
+  .events_txt{
+    font-size:2em;
+    position:absolute;
+    left:45%;
+    top:4%;
+  } 
+
+
+  .about_rann_box{
+    position: absolute;
+    width:45%;
+    height:80vh;
+    left:3%;
+    top:12%;
+    background-color:rgba(255,255,255,0.8);
+  }
+  .abt_rann_txt{
+    margin-left:36%;
+    margin-top:2%;
+    font-size:2.6em;
+    font-family: 'Dosis',sans-serif;
+  }
+
+  .abt_rann_cont{
+    width:90%;
+    text-align: justify;
+    font-size:1.8em;
+    margin-left:35px;
+    font-family: 'Dosis',sans-serif;
+  }
+
+
+  .about_kiet_box{
+    position: absolute;
+    width:45%;
+    height:80vh;
+    left:51%;
+    top:12%;
+    background-color:rgba(255,255,255,0.8);
+  }
+
+  .abt_kiet_txt{
+    margin-left:36%;
+    margin-top:2%;
+    font-size:2.6em;
+    font-family: 'Dosis',sans-serif;
+  }
+
+  .abt_kiet_cont{
+    width:90%;
+    text-align: justify;
+    font-size:1vw;
+    margin-left:35px;
+    font-family: 'Dosis',sans-serif;
+  }
+
+  a{
+  	color:#fff;
+  }
